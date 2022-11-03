@@ -4,7 +4,7 @@ export const HeaderBar = styled.header`
   min-height: 100px;
   background: white;
   font-family: 'Poppins', sans-serif;
-  color: #4400ff;
+  color:  #bf1124;
 
   .header-contact {
     display: flex;
@@ -28,15 +28,15 @@ export const HeaderBar = styled.header`
     padding-right: 5px;
     font-size: 16px;
     font-weight: 600;
-    color: #4400ff;
+   color:  #bf1124;
   }
   .header-contact p label span {
     font-family: 12px;
     font-weight: 300;
   }
-  .icon-wrap {
-    color: #4400ff;
-  }
+  /* .icon-wrap {
+    
+  } */
   .header-menu {
     display: flex;
     justify-content: space-between;
@@ -56,12 +56,12 @@ export const HeaderBar = styled.header`
     font-size: 18px;
     color: #000000;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    color: #4400ff;
+    font-weight: 700;
+    color:  #bf1124;
   }
   .logo {
     font-size: 28px;
-    color: #4400ff;
+    color: color:  #bf1124;
     font-weight: 700;
   }
 `

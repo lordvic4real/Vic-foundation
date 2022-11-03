@@ -12,10 +12,10 @@ const Header = () => {
           <p> <label>Phone:</label><span>07060936070</span></p>
           <p> <label>Email:</label><span>Support@milkavic.com</span></p>
           <p className='icon-wrap'>
-            <FiFacebook />
-            <FiTwitter />
-            <FiInstagram />
-            <FiYoutube/>
+            <FiFacebook style={{color: " #4368b2"}} />
+            <FiTwitter  style={{color: " #1aa1f2"}}/>
+            <FiInstagram style={{color: " #fa0a43"}} />
+            <FiYoutube style={{color: " #fb0000;"}}/>
           </p>
         </div>
         <div>
