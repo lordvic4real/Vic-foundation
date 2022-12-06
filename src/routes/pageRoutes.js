@@ -1,3 +1,4 @@
+import Contact from "../pages/Contact";
 import Home from "../pages/Home";
 
 const pagesRoutes = [
@@ -19,6 +20,15 @@ const pagesRoutes = [
 //     isIndex: false,
 //     subRoute: null,
 //   },
+  {
+    path: 'contact',
+    element: <Contact />,
+     alias: 'Layout',
+   icon: null,
+   isAuth: false,
+    isIndex: false,
+    subRoute: null,
+   },
 
 ]
 

@@ -29,19 +29,19 @@ const Header = () => {
             <Link to="/">Home</Link>
           </span>
            <span>
-            <Link to="/">About us</Link>
+            <Link to="/about">About us</Link>
           </span>
            <span>
-            <Link to="/">Programmes</Link>
+            <Link to="/programs">Programmes</Link>
           </span>
            <span>
-            <Link to="/">Events</Link>
+            <Link to="/events">Events</Link>
           </span>
            <span>
-            <Link to="/">Blog</Link>
+            <Link to="/blog">Blog</Link>
           </span>
            <span>
-            <Link to="/">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </span>
         </nav>
       </div>
