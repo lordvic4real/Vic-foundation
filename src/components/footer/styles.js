@@ -13,8 +13,17 @@ export const Container = styled.div`
     color: #777777;
     padding: 100px 120px;
     display: grid;
-    grid-template-columns: 2.2fr 1.3fr 1.933fr 1.8fr;
+    grid-template-columns: 2.2fr 1.3fr 1.933fr 2.8fr;
     gap: 25px;
+    flex-wrap: wrap;
+    @media (max-width:768px) {
+      grid-template-columns: 1fr;
+      padding: 80px 5%;
+    }
+    @media (width:885px) {
+      /* grid-template-columns: 1fr; */
+      padding: 80px 5%;
+    }
   }
 
   .footer-bottom {
@@ -51,4 +60,23 @@ export const Container = styled.div`
       transition: all 0.2s ease-in-out 0.2s;
     }
   }
+  .d-flex{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-size: 1em;
+    @media (max-width:768px) {
+      font-size: 140%;
+      margin: 30px 0;
+    }
+  }
+  .d-none{
+    display: none !important;
+    @media(max-width: 768px){
+      display: block !important;
+      display: flex !important;
+       gap: 20px !important;
+    }
+  }
+ 
 `

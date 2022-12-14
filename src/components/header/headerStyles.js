@@ -61,7 +61,120 @@ export const HeaderBar = styled.header`
   }
   .logo {
     font-size: 28px;
-    color: color:  #bf1124;
+    color:  #bf1124;
     font-weight: 700;
+  }
+
+  .menu-icons{
+    display: none;
+  }
+
+.fa-bars{
+  color: #bf1124;
+}
+
+.nav-menu{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.button{
+  display: none;
+}
+
+  @media screen and (max-width: 950px) {
+    .nav-menu{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5 ease;
+    }
+
+    .icon-wrap{
+      display: none;
+    }
+
+    .header-menu a{
+      color: white;
+    }
+
+    .nav-menu.active{
+      background: #242222;
+      left: 0;
+      opacity: 1;
+      transition: all 0,5 ease;
+      z-index: 1;
+    }
+
+    .nav-links{
+      text-align: center;
+      padding: 2rem;
+      color: white;
+      width: 100%;
+      display: table;
+    }
+
+    .nav-links:hover{
+      background-color: #bf1124;
+      border-radius: 0;
+    }
+
+    .logo{
+      position: absolute;
+      top: 3.5;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+
+    .menu-icon{
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .menu-icons{
+      display: block;
+      background-color: none;
+    }
+
+    .fa-times{
+      color: black;
+      font-size: 2rem;
+
+    }
+    
+    .nav-links-mobile{
+      display: contents;
+      text-align: center;
+      padding: 1.5rem;
+      margin: 2rem auto;
+      border-radius: 4px;
+      width: 80%;
+      background: #bf1124;
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .menu-icons{
+      color: #bf1124;
+    }
+
+    .nav-links-mobile:hover{
+      background: #fff;
+      color: #ec8593;
+      transition: 250ms;
+    }
   }
 `
