@@ -58,7 +58,7 @@ const Footer = () => {
             <span>
               <BsTelephone/>
             </span>
-            <span>+23481678484, +2347012227405</span>
+            <span>+2348167848499, +2347012227405</span>
           </p>
           <p className='d-flex'>
             <AiOutlineMail/>

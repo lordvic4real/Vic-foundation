@@ -82,7 +82,8 @@ export const NavbarExtendedContainer = styled.div`
   width: 70vw;
   height: 100vw;
   right: 0;
-  top:90px;
+  top:135px;
+  padding-top:20px;
   z-index:200;
   @media (min-width: 760px) {
     display: none;

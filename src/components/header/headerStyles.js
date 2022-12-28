@@ -18,7 +18,9 @@ export const HeaderBar = styled.header`
       height: auto;
       padding-bottom: 35px;
      
+     
     }
+   
    
   }
   .contact-details {
@@ -27,7 +29,13 @@ export const HeaderBar = styled.header`
     gap: 40px;
     flex-wrap: wrap;
     @media (max-width: 760px){
-      gap: 10px;
+      gap: 0px;
+    }
+  }
+  .contact-details p{
+    @media (max-width: 760px){
+      line-height: 0px;
+      padding: 0;
     }
   }
   .icon-wrap {
