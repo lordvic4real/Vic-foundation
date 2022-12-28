@@ -10,7 +10,7 @@ const DirectorBio = () => {
                 <h1>about the founder</h1>
                 <p>
      Amb. Zubair Nasiru Temidire (OMOBA) a native of Osi Ekiti LG Kwara State. 
-     Born on the 2nd of February 1992 to a Royal Family of OLOSI ALOWOLODU of OLOSI OF
+     Born on the 2nd of February 1992 to a Royal Family of OLOSI Ile-Ohun, ALOWOLODU of OLOSI OF
       OSI KWARA STATE. Own Certificate in Financial Management Technology Advanced, NCE in 
       Business Education, Bsc. Ed. Economics University of Abuja. Founder/CEO of Voice of
        the Voiceless Foundation, Omoba Integrated services Limited, Former SSA Media 

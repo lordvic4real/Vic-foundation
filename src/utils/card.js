@@ -35,7 +35,7 @@ export const BoardMembers = ( {name, title, desc, image}) =>{
     return(
        <Container>
          <div className="wrap">
-            <div className="img-con"><img src={image}/></div>
+            <div className="img-con"><img src={image} alt=""/></div>
             <div className="card-body">
               <h4>{name}</h4>
               <h3>{title}</h3>
