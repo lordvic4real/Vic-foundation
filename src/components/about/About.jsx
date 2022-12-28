@@ -10,13 +10,8 @@ const About = () => {
         <div className="desc">
           <h1 className='title'>who we are</h1>
           <p>
-            Their multiply doesn't behold shall appear living heaven second roo
-            lights. Itself hath thing for won't herb forth gathered good bear
-            fowl kind give fly form winged for reason Land their given the
-            seasons herb lights fowl beast whales it after multiply fifth under
-            to it waters waters created heaven very fill agenc to. Dry creepeth
-            subdue them kind night behold rule stars him grass waters our
-            without
+          We believe taking responsibilities is inevitable therefore VOV Foundation is taking reponsiblity to add values to humans for greater tomorrow.
+          Indeed together we can speak.
           </p>
           <DonateBtn>learn more</DonateBtn>
         </div>

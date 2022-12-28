@@ -6,7 +6,7 @@ const ServicesCard = ({image, title, desc}) => {
       <Container>
           <div className='card'>
               <img src={image} alt="" />
-              <h3>{title}</h3>
+              <h3 className='title2'>{title}</h3>
               <p>{desc }</p>
           </div>
     </Container>
