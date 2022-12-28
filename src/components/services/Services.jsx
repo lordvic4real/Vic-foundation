@@ -8,27 +8,45 @@ import volun from './../../assets/images/volun.webp'
 const Services = () => {
   const services = [
     {
-      title: 'Education for every child',
+      title: 'Education',
       pix: donate,
       desc:
-        "giving every child relevant skills to meet up with the 21th century challenges",
+        "Giving every child relevant skills to meet up with the 21th century challenges",
     },
     {
-      title: 'Give Inspiration',
+      title: 'Health',
       pix: inspire,
       desc:
-        "It you're. Was called you're fowl grass lesser land together waters beast darkness earth land whose",
+        " To draw awareness to the under development of health care in our dear Nigeria and propose viable solutions.",
     },
     {
-      title: 'Feeding the hungry',
+      title: 'Poverty Eradication ',
       pix: volun,
       desc:
-        "It you're. Was called you're fowl grass lesser land together waters beast darkness earth land whose",
+        " To train the masses to be self reliance in order to alleviate poverty that contributes to the menace of social vices  ",
+    },
+    {
+      title: 'Human Capital Development',
+      pix: volun,
+      desc:
+        "To provide empowerment on skills acquisition.",
+    },
+    {
+      title: 'Peace Ambassadors and Propagator for Good Governance',
+      pix: volun,
+      desc:
+        "To serve as an advocate of good governance.",
+    },
+    {
+      title: 'Equality',
+      pix: volun,
+      desc:
+        "Equality and justice.",
     },
   ]
   return (
     <Container>
-      <h1 className="title">our causes</h1>
+      <h1 className="title">our Focus</h1>
       <div className="card-wrapper">
         {services &&
           services.map(({ title, desc, pix }) => (

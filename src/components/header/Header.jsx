@@ -1,82 +1,85 @@
 import React, { useState } from 'react'
 import { HeaderBar } from './headerStyles'
-import { FiFacebook, FiTwitter, FiInstagram, FiYoutube, } from "react-icons/fi"
-import {  FaBars, FaTimes } from 'react-icons/fa'
+import { FiFacebook, FiTwitter, FiInstagram, FiYoutube, FiLinkedin } from "react-icons/fi"
 import { DonateBtn } from '../../utils/button'
-import { Link } from 'react-router-dom'
-import Dropdown from '../Dropdown/Dropdown'
+
+
+import {
+  NavbarContainer,
+  LeftContainer,
+  RightContainer,
+  NavbarExtendedContainer,
+  NavbarLinkContainer,
+  NavbarLink,
+  Logo,
+  OpenLinksButton,
+  NavbarLinkExtended,
+} from "./../styles/NavBar.style";
+import LogoImg from "./../../assets/images/logonew.png";
 
 function Header() {
-  const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
+  const [extendNavbar, setExtendNavbar] = useState(false);
+  
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
-  const onMouseEnter = () => {
-    if (window.innerWidth < 950) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
-
-  const onMouseLeave = () => {
-    if (window.innerWidth < 950) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
-  };
+  
 
   return (
     <HeaderBar>
           <div className='header-contact'>
             <div className='contact-details'>
-          <p> <label>Phone:</label><span>07060936070</span></p>
-          <p> <label>Email:</label><span>Support@milkavic.com</span></p>
+          <p> <label>Phone:</label><span>08167848499</span></p>
+          <p> <label>Email:</label><a href='mailto:voicelessno1@gmail.com' target={"_blank"}rel='noopenner noreferrer'>voicelessno1@gmail.com</a></p>
           <p className='icon-wrap'>
-            <FiFacebook style={{color: " #4368b2"}} />
-            <FiTwitter  style={{color: " #1aa1f2"}}/>
-            <FiInstagram style={{color: " #fa0a43"}} />
-            <FiYoutube style={{color: " #fb0000"}}/>
+          <a href=" https://www.facebook.com/Vioceless1 " target="_blank" rel='noopenner noreferrer'>
+          <FiFacebook style={{color: " #4368b2"}} />
+          </a>
+           <a href="https://www.twitter.com/ztemmy" target="_blank" rel='noopenner noreferrer'>
+             <FiTwitter  style={{color: " #1aa1f2"}}/></a>
+           <a href="https://www.instagram.com/temmyben">
+           <FiInstagram style={{color: " #fa0a43"}}  target="_blank" rel='noopenner noreferrer'/>
+           </a>
+           <a href={"https://www.youtube.com/ztemmy"} target="_blank" rel='noopenner noreferrer'>
+           <FiYoutube style={{color: " #fb0000"}}/>
+           </a>
+           <a href={"http://linkedin.com/in/zubair-nasiru-temidire"}  target="_blank" rel='noopenner noreferrer'>
+           <FiLinkedin style={{color: " #1aa1f2"}}/>
+           </a>
           </p>
         </div>
         <div className=''>
             <DonateBtn>donate</DonateBtn>
         </div>
       </div>
-      <div className='header-menu'>
-        <span className='logo' onClick={closeMobileMenu}>Milkavic</span>
-        <nav>
-        <div className='menu-icon' onClick={handleClick}>
-          <i className={click ? <FaTimes/> : <FaBars/>} />
-        </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li className='nav-item'>
-            <Link to="/" className='nav-links' onClick={closeMobileMenu}>Home</Link>
-          </li>
-           <li className='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-            <Link to="/about" className='nav-links' onClick={closeMobileMenu}>About us</Link>
-          </li>
-           <li className='nav-item'>
-            <Link to="/programs" className='nav-links' onClick={closeMobileMenu}>Programmes</Link>
-          </li>
-           <li className='nav-item'>
-            <Link to="/events" className='nav-links' onClick={closeMobileMenu}>Events</Link>
-          </li>
-           <li className='nav-item'>
-            <Link to="/blog" className='nav-links' onClick={closeMobileMenu}>Blog</Link>
-          </li>
-           <li className='nav-item'>
-            <Link to="/contact" className='nav-links' onClick={closeMobileMenu}>Contact</Link>
-          </li>
-          {/* <li className='nav-item'>
-            <DonateBtn>donate</DonateBtn>
-          </li> */}
-          </ul>
-        </nav>
-      </div>
+      <NavbarContainer>
+        <LeftContainer>
+          <Logo src={LogoImg}></Logo>
+        </LeftContainer>
+        <OpenLinksButton
+              onClick={() => {
+                setExtendNavbar((curr) => !curr);
+              }}
+            >
+              {extendNavbar ? <>&#10005;</> : <> &#8801;</>}
+            </OpenLinksButton>
+        <RightContainer>
+          <NavbarLinkContainer>
+          <NavbarLink to="/"> Home</NavbarLink>
+          <NavbarLink to="/about">About us</NavbarLink>
+          <NavbarLink to="/program">Program</NavbarLink>
+          <NavbarLink to="/event">Events</NavbarLink>
+          <NavbarLink to="/contact">Contact</NavbarLink>
+          </NavbarLinkContainer>
+        </RightContainer> 
+        {extendNavbar && (
+        <NavbarExtendedContainer>
+          <NavbarLinkExtended to="/"> Home</NavbarLinkExtended>
+          <NavbarLinkExtended to="/about">About us</NavbarLinkExtended>
+          <NavbarLinkExtended to="/program">Programs</NavbarLinkExtended>
+          <NavbarLinkExtended to="/event">Events</NavbarLinkExtended>
+          <NavbarLinkExtended to="/contact" >Contact</NavbarLinkExtended>
+        </NavbarExtendedContainer>
+      )}
+      </NavbarContainer>
     </HeaderBar>
   )
 }

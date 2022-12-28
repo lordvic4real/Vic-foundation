@@ -1,3 +1,4 @@
+import AboutPage from "../pages/AboutPage";
 import Contact from "../pages/Contact";
 import Home from "../pages/Home";
 
@@ -11,15 +12,15 @@ const pagesRoutes = [
       isIndex: true,
       subRoute: null,
   },
-//   {
-//     path: 'about',
-//     element: <AboutPage />,
-//     alias: 'Layout',
-//     icon: null,
-//     isAuth: false,
-//     isIndex: false,
-//     subRoute: null,
-//   },
+  {
+    path: 'about',
+    element: <AboutPage />,
+    alias: 'Layout',
+    icon: null,
+    isAuth: false,
+    isIndex: false,
+    subRoute: null,
+  },
   {
     path: 'contact',
     element: <Contact />,

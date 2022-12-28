@@ -20,12 +20,20 @@ export const Container = styled.div`
     font-size: 45px;
     font-weight:800;
     animation: topBottom 1s ease-in-out both  ;
+    @media (max-width: 760px){
+      font-size: 30px;
+    }
    
   }
   p {
     line-height: 25px;
     font-size: 18px;
+    text-transform: capitalize;
     animation: topBottom 0.4s ease-in-out both 1s ;
+    @media (max-width: 760px){
+      font-size: 150%;
+      padding: 0 3%;
+    }
 
   }
   

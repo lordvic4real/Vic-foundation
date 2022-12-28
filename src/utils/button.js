@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const DonateBtn = styled.button`
-  background: #ec8593;
+  background:#015495;
   text-transform: capitalize;
   padding: 27px 44px;
   color: #fff;
