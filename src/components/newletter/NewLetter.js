@@ -18,7 +18,7 @@ const NewLetter = () => {
   return (
     <Container>
       <div className="input-container">
-        <h1>subcribe to our news NewLetters</h1>
+        <h3>subcribe to our news NewLetters</h3>
         <div>
           <form onSubmit={handleSubmit}>
             <div>

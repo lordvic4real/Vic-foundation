@@ -21,7 +21,9 @@ export const Container = styled.div`
     font-weight:800;
     animation: topBottom 1s ease-in-out both  ;
     @media (max-width: 760px){
-      font-size: 30px;
+      font-size: 25px;
+      line-height: 43px;
+      padding: 12px;
     }
    
   }
@@ -31,8 +33,9 @@ export const Container = styled.div`
     text-transform: capitalize;
     animation: topBottom 0.4s ease-in-out both 1s ;
     @media (max-width: 760px){
-      font-size: 150%;
+      font-size: 100%;
       padding: 0 3%;
+      padding: 10px;
     }
 
   }
