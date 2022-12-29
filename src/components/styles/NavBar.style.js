@@ -10,7 +10,7 @@ export const NavbarContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
    padding: 0px 5%;
-   position: relative;
+   
 `;
 
 export const RightContainer = styled.div`
@@ -31,6 +31,7 @@ export const LeftContainer = styled.div`
 export const NavbarLinkContainer = styled.div`
   display: flex;
   gap: 40px;
+    
 `;
 
 export const NavbarLink = styled(Link)`
@@ -43,7 +44,7 @@ export const NavbarLink = styled(Link)`
   }
 `;
 
-export const NavbarLinkExtended = styled(Link)`
+export const NavbarLinkExtended = styled(Link)` 
   color: white;
   font-size: x-large;
   font-family: Arial, Helvetica, sans-serif;
@@ -77,14 +78,14 @@ export const NavbarExtendedContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #01549590;
+  background: #015495;
   position: absolute;
   width: 70vw;
   height: 100vw;
   right: 0;
-  top:135px;
+  top:338px;
   padding-top:20px;
-  z-index:200;
+  z-index:20000 !important;
   @media (min-width: 760px) {
     display: none;
   }

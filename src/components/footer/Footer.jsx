@@ -91,7 +91,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-         <p>&copy; copyright 2022 VOV foundation</p>
+         <p>&copy; Copyright 2022 VOV Foundation</p>
       </div>
     </Container>
   )

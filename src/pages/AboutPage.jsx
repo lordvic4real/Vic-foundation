@@ -14,7 +14,6 @@ const AboutPage = () => {
       </Banner>
       <DirectorBio/>
      <h1 className='title'>executive directors</h1>
-   
     <Directors/>
     </Container>
   )

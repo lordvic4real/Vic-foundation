@@ -62,8 +62,9 @@ export const HeaderBar = styled.header`
     align-items: center;
     padding: 0 3%;
     height: 80px;
-    background: white;
+    
     /* box-shadow: 2px 2px 3px #bebebe, -5px -5px 4px #ffffff; */
+    box-shadow: 2px 2px 3px #bebebe, -5px -5px 4px #ffffff;
   }
 
   .header-menu nav {

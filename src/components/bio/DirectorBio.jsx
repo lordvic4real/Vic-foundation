@@ -1,11 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+import ceo from "./../../assets/images/ceo.jpg"
 
 const DirectorBio = () => {
   return (
     <Container>
         <div className='info'>
-            <div className=''>1</div>
+            <div className='img-wrap'>
+              <img src={ceo} alt="" />
+            </div>
             <div className=''>
                 <h1>about the founder</h1>
                 <p>
@@ -40,8 +43,19 @@ const Container = styled.div `
     grid-template-columns: repeat(2,1fr);
     padding: 40px 5%;
     min-height: 400px;
-  }   
+    gap: 30px;
+    @media(max-width: 760px) {
+      grid-template-columns: auto;
+    }
+  }  
+  .img-wrap{
+    text-align: center;
+  } 
+ img{
+  width: 80%;
+  height: auto;
  
+ }
 
 
 `

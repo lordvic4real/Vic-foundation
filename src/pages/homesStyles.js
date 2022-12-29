@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import bannerbg from './../assets/images/2.jpg'
 
 export const Container = styled.div`
-  background: linear-gradient(#00000080, #00000090), url(${bannerbg});
+  background: linear-gradient(#015495, #00000098), url(${bannerbg});
   height: 650px;
   background-size: cover;
   object-fit: cover;

@@ -33,9 +33,26 @@ p {
     margin-inline-end: 0px;
 }
 body {
-    line-height: 25px;
-    font-size: 15px;
+    /* line-height: 25px;
+    font-size: 15px; */
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     color: #777777;
 }
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+
+@media screen and (min-width: 1000px){
+  html{
+    font-size: 22px;
+  }
+}
+  

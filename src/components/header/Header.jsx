@@ -16,6 +16,7 @@ import {
   NavbarLinkExtended,
 } from "./../styles/NavBar.style";
 import LogoImg from "./../../assets/images/logonew.png";
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [extendNavbar, setExtendNavbar] = useState(false);
@@ -27,7 +28,7 @@ function Header() {
     <HeaderBar>
           <div className='header-contact'>
             <div className='contact-details'>
-          <p> <label>Phone:</label><span>08167848499</span></p>
+          <p> <label>Phone:</label><span>+23408167848499</span></p>
           <p> <label>Email:</label><a href='mailto:voicelessno1@gmail.com' target={"_blank"}rel='noopenner noreferrer'>voicelessno1@gmail.com</a></p>
           <p className='icon-wrap'>
           <a href=" https://www.facebook.com/Vioceless1 " target="_blank" rel='noopenner noreferrer'>
@@ -52,7 +53,9 @@ function Header() {
       </div>
       <NavbarContainer>
         <LeftContainer>
+          <Link to={"/"}>
           <Logo src={LogoImg}></Logo>
+          </Link>
         </LeftContainer>
         <OpenLinksButton
               onClick={() => {
