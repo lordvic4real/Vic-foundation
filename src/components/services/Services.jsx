@@ -1,45 +1,46 @@
 import React from 'react'
 import ServicesCard from '../servicesCard/ServicesCard'
 import { Container } from './serviceStyle'
-import donate from './../../assets/images/donate.webp'
-import inspire from './../../assets/images/inspire.webp'
-import volun from './../../assets/images/volun.webp'
+import {HiAcademicCap} from "react-icons/hi"
+import {GiHealthNormal, GiHumanPyramid, GiPeaceDove} from "react-icons/gi"
+import {FaEnvira} from "react-icons/fa"
+import {VscLaw} from "react-icons/vsc"
 
 const Services = () => {
   const services = [
     {
       title: 'Education',
-      pix: donate,
+      icon: <HiAcademicCap/>,
       desc:
         "Giving every child relevant skills to meet up with the 21th century challenges",
     },
     {
       title: 'Health',
-      pix: inspire,
+      icon: <GiHealthNormal/>,
       desc:
         " To draw awareness to the under development of health care in our dear Nigeria and propose viable solutions.",
     },
     {
       title: 'Poverty Eradication ',
-      pix: volun,
+      icon: <FaEnvira/>,
       desc:
         " To train the masses to be self reliance in order to alleviate poverty that contributes to the menace of social vices  ",
     },
     {
       title: 'Human Capital Development',
-      pix: volun,
+      icon: <GiHumanPyramid/>,
       desc:
         "To provide empowerment on skills acquisition.",
     },
     {
       title: 'Peace Ambassadors and Propagator for Good Governance',
-      pix: volun,
+      icon: <GiPeaceDove/>,
       desc:
         "To serve as an advocate of good governance.",
     },
     {
       title: 'Equality',
-      pix: volun,
+      icon: <VscLaw/>,
       desc:
         "Equality and justice.",
     },
@@ -49,8 +50,8 @@ const Services = () => {
       <h1 className="title">our Focus</h1>
       <div className="card-wrapper">
         {services &&
-          services.map(({ title, desc, pix }) => (
-            <ServicesCard title={title} desc={desc} image={pix} />
+          services.map(({ title, desc, icon }) => (
+            <ServicesCard title={title} desc={desc} icon={icon} />
           ))}
       </div>
     </Container>

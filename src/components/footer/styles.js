@@ -61,6 +61,10 @@ export const Container = styled.div`
       transition: all 0.2s ease-in-out 0.2s;
     }
   }
+ .footer-bottom p{
+    color: #fafafa80;
+    font-size: 16px;
+  }
   .d-flex{
     display: flex;
     gap: 30px;

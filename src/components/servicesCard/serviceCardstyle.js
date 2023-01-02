@@ -24,6 +24,8 @@ export const Container = styled.div`
   }
   p{
     line-height: 20px;
+    font-size: 16px;
+    font-family: muli;
   }
   .title2{
     font-size:16px;
