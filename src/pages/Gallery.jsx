@@ -38,6 +38,7 @@ const Layout = styled.div`
     width: 100%;
     height: auto;
     object-fit: cover;
+    cursor: pointer;
   }
   .pics {
     transition: all 350ms ease;
