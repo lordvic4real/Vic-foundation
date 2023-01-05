@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { galleryImg } from '../data/data';
+import {AiOutlineClose} from 'react-icons/ai'
 
 const Layout = styled.div`
   background: #f6f6f6;
@@ -35,7 +36,7 @@ const Layout = styled.div`
   }
   .gallery-wrap img {
     width: 100%;
-    height: 350px;
+    height: auto;
     object-fit: cover;
   }
   .pics {
@@ -74,13 +75,14 @@ const Layout = styled.div`
     padding: 20px 0 20px;
     max-height: 100%;
     margin: 0 auto;
+    object-fit: cover;
   }
   .model.open svg {
     position: fixed;
     top: 10px;
     right: 10px;
-    width: 2rem;
-    height: 2rem;
+    width: 2.3rem;
+    height: 2.3rem;
     background: rgba(0, 0, 0, 0.4);
     padding: 5px;
     color: #fff;
@@ -90,21 +92,42 @@ const Layout = styled.div`
     filter: opacity(0.8);
   } */
   .gallery-wrap img:hover {
-    filter: opacity(0.8);
+    filter: opacity(0.6);
   }
 `;
 
 
 const Gallery = () => {
-    // const [tempImg, setTempImg] = React.useState("");
-    // const [model, setModel] = React.useState(false);
+    const [tempImg, setTempImg] = React.useState("");
+    const [model, setModel] = React.useState(false);
 
-    // const getImg = (imgUrl) => {
-    //     setTempImg(imgUrl);
-    //     setModel(true);
-    //   };
+    const getImg = (imgUrl) => {
+        setTempImg(imgUrl);
+        setModel(true);
+      };
   return (
-    <Layout>Gallery</Layout>
+    <Layout>
+              <div className={model ? "model open" : "model"}>
+          <img src={tempImg} alt="gallery pix" />
+          <AiOutlineClose
+            onClick={() => {
+              setModel(false);
+            }}
+          />
+        </div>
+
+        <div className="gallery-wrap">
+        { galleryImg.map((pix) => (
+                    <div
+                      className="pix"
+                      key={pix.id}
+                      onClick={() => getImg(pix.imgUrl)}
+                    >
+                      <img src={pix.imgUrl} key={pix.id}  alt="pix"/>
+                    </div>
+                  ))}
+        </div>
+    </Layout>
   )
 }
 

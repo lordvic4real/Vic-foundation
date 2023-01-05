@@ -5,6 +5,10 @@ export const HeaderBar = styled.header`
   background: white;
   font-family: 'Poppins', sans-serif;
   color:  #04aaf8;
+  /* position: fixed; */
+  width: 100%;
+  z-index: 20000;
+  /* margin-bottom:120px; */
 
   .header-contact {
     display: flex;
