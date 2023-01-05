@@ -95,13 +95,13 @@ const Layout = styled.div`
 
 
 const Gallery = () => {
-    const [tempImg, setTempImg] = React.useState("");
-    const [model, setModel] = React.useState(false);
+    // const [tempImg, setTempImg] = React.useState("");
+    // const [model, setModel] = React.useState(false);
 
-    const getImg = (imgUrl) => {
-        setTempImg(imgUrl);
-        setModel(true);
-      };
+    // const getImg = (imgUrl) => {
+    //     setTempImg(imgUrl);
+    //     setModel(true);
+    //   };
   return (
     <Layout>Gallery</Layout>
   )
