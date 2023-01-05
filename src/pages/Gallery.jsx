@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { galleryImg } from '../data/data';
 
 const Layout = styled.div`
   background: #f6f6f6;
