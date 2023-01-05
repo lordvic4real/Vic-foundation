@@ -10,8 +10,8 @@ const DirectorBio = () => {
               <img src={ceo} alt="" />
             </div>
             <div className=''>
-                <h1>about the founder</h1>
-                <p>
+                <h1 className='title'>about the founder</h1>
+                <p className='desc'>
      Amb. Zubair Nasiru Temidire (OMOBA) a native of Osi Ekiti LG Kwara State. 
      Born on the 2nd of February 1992 to a Royal Family of OLOSI Ile-Ohun, ALOWOLODU of OLOSI OF
       OSI KWARA STATE. Own Certificate in Financial Management Technology Advanced, NCE in 
@@ -43,7 +43,7 @@ const Container = styled.div `
     grid-template-columns: repeat(2,1fr);
     padding: 40px 5%;
     min-height: 400px;
-    gap: 30px;
+    gap: 10px;
     @media(max-width: 760px) {
       grid-template-columns: auto;
     }
@@ -56,6 +56,14 @@ const Container = styled.div `
   height: auto;
  
  }
+ .desc{
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .title{
+    text-transform: capitalize;
+    padding: 80px 20px 30px 0;
+  }
 
 
 `

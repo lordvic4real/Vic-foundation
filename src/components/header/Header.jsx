@@ -68,8 +68,8 @@ function Header() {
           <NavbarLinkContainer>
           <NavbarLink to="/"> Home</NavbarLink>
           <NavbarLink to="/about">About us</NavbarLink>
-          <NavbarLink to="/program">Program</NavbarLink>
-          <NavbarLink to="/event">Events</NavbarLink>
+          <NavbarLink to="/programs">Program</NavbarLink>
+          <NavbarLink to="/gallery">Gallery</NavbarLink>
           <NavbarLink to="/contact">Contact</NavbarLink>
           </NavbarLinkContainer>
         </RightContainer> 
@@ -77,8 +77,8 @@ function Header() {
         <NavbarExtendedContainer>
           <NavbarLinkExtended to="/"> Home</NavbarLinkExtended>
           <NavbarLinkExtended to="/about">About us</NavbarLinkExtended>
-          <NavbarLinkExtended to="/program">Programs</NavbarLinkExtended>
-          <NavbarLinkExtended to="/event">Events</NavbarLinkExtended>
+          <NavbarLinkExtended to="/programs">Programs</NavbarLinkExtended>
+          <NavbarLinkExtended to="/gallery">Gallery</NavbarLinkExtended>
           <NavbarLinkExtended to="/contact" >Contact</NavbarLinkExtended>
         </NavbarExtendedContainer>
       )}
