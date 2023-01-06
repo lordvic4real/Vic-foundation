@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 import { galleryImg } from '../data/data';
-import {AiOutlineClose} from 'react-icons/ai'
+import {AiOutlineClose, AiOutlineDoubleRight} from 'react-icons/ai'
+import {DonateBtn} from "./../utils/button"
 
 const Layout = styled.div`
   background: #f6f6f6;
@@ -13,6 +14,10 @@ const Layout = styled.div`
   }
   p {
     padding-top: 12px;
+  }
+  .btn-wrap{
+    text-align: center;
+    padding: 60px;
   }
   h1 {
     font-size: 37px;
@@ -36,7 +41,7 @@ const Layout = styled.div`
   }
   .gallery-wrap img {
     width: 100%;
-    height: auto;
+    height: 350px;
     object-fit: cover;
     cursor: pointer;
   }
@@ -82,8 +87,8 @@ const Layout = styled.div`
     position: fixed;
     top: 10px;
     right: 10px;
-    width: 2.3rem;
-    height: 2.3rem;
+    width: 3.3rem;
+    height: 3.3rem;
     background: rgba(0, 0, 0, 0.4);
     padding: 5px;
     color: #fff;
@@ -126,7 +131,12 @@ const Gallery = () => {
                     >
                       <img src={pix.imgUrl} key={pix.id}  alt="pix"/>
                     </div>
-                  ))}
+               ))}
+        </div>
+        <div className='btn-wrap'>
+          <a href=" https://www.facebook.com/Vioceless1/photos " target="_blank" rel='noopenner noreferrer'>
+          <DonateBtn><span>see more</span><AiOutlineDoubleRight/></DonateBtn>
+          </a>
         </div>
     </Layout>
   )

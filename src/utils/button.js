@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const DonateBtn = styled.button`
+  display: inline-flex !important;
+  align-items: center;
   background:#015495;
   text-transform: capitalize;
   padding: 27px 44px;
