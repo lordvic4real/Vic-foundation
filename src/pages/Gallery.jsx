@@ -72,8 +72,8 @@ const Layout = styled.div`
     transform: scale(1);
   }
   .model img {
-    width: auto;
-    max-width: 100%;
+    /* width: auto; */
+    max-width: 40%;
     height: auto;
     display: block;
     line-height: 0;
@@ -87,8 +87,8 @@ const Layout = styled.div`
     position: fixed;
     top: 10px;
     right: 10px;
-    width: 3.3rem;
-    height: 3.3rem;
+    width: 2.03rem;
+    height: 2.03rem;
     background: rgba(0, 0, 0, 0.4);
     padding: 5px;
     color: #fff;

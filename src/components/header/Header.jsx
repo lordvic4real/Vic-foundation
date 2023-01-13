@@ -36,8 +36,8 @@ function Header() {
           </a>
            <a href="https://www.twitter.com/ztemmy" target="_blank" rel='noopenner noreferrer'>
              <FiTwitter  style={{color: " #1aa1f2"}}/></a>
-           <a href="https://www.instagram.com/temmyben">
-           <FiInstagram style={{color: " #fa0a43"}}  target="_blank" rel='noopenner noreferrer'/>
+           <a href="https://www.instagram.com/vovc_foundation"   target="_blank" rel='noopenner noreferrer'>
+           <FiInstagram style={{color: " #fa0a43"}}/>
            </a>
            <a href={"https://www.youtube.com/ztemmy"} target="_blank" rel='noopenner noreferrer'>
            <FiYoutube style={{color: " #fb0000"}}/>
@@ -48,7 +48,9 @@ function Header() {
           </p>
         </div>
         <div className=''>
-            <DonateBtn>donate</DonateBtn>
+           <Link to={"/donate"}>
+           <DonateBtn>donate</DonateBtn>
+           </Link>
         </div>
       </div>
       <NavbarContainer>

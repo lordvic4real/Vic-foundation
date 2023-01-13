@@ -1,5 +1,6 @@
 import AboutPage from "../pages/AboutPage";
 import Contact from "../pages/Contact";
+import Donate from "../pages/Donate";
 import Gallery from "../pages/Gallery";
 import Home from "../pages/Home";
 import { Programs } from "../pages/Programs";
@@ -44,6 +45,15 @@ const pagesRoutes = [
    {
     path: 'programs',
     element: <Programs />,
+     alias: 'Layout',
+   icon: null,
+   isAuth: false,
+    isIndex: false,
+    subRoute: null,
+   },
+   {
+    path: 'donate',
+    element: <Donate/>,
      alias: 'Layout',
    icon: null,
    isAuth: false,
