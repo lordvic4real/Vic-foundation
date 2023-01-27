@@ -23,7 +23,7 @@ export const DonateBtn = styled.button`
 
 export const CausesBtn = styled.button`
   border: 3px solid #ec8593;
-  background: #ec8593;
+  background: #015495;
   text-transform: capitalize;
   padding: 27px 44px;
   color: #fff;

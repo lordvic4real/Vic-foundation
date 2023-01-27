@@ -79,7 +79,7 @@ const Layout = styled.div`
     line-height: 0;
     box-sizing: border-box;
     padding: 20px 0 20px;
-    max-height: 100%;
+    max-height: 80%;
     margin: 0 auto;
     object-fit: cover;
   }
