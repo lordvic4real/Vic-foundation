@@ -32,7 +32,9 @@ const Footer = () => {
             taking reponsiblity to make sustainable impact that add values to
             human for greater tomorrow and Indeed together we can speak.
           </p>
-          <FooterBtn>become a volunteer</FooterBtn>
+          <Link to={"/volunteer"}>
+            <FooterBtn>become a volunteer</FooterBtn>
+          </Link>
         </div>
         <div>
           <h3>Quick Links</h3>

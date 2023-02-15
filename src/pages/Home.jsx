@@ -26,8 +26,8 @@ const Home = () => {
           <p>
             Give a voice to the voiceless in order to build the voice for human capital development, <br/> because together we can speak.
           </p>
-          <Link to={"/about"}>
-          <Btn>Learn More</Btn>
+          <Link to={"/volunteer"}>
+          <Btn>become a volunteer</Btn>
           </Link>
         </Container>
       </Banner>

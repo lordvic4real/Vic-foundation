@@ -4,63 +4,72 @@ import Donate from "../pages/Donate";
 import Gallery from "../pages/Gallery";
 import Home from "../pages/Home";
 import { Programs } from "../pages/Programs";
+import VolunteerPage from "../pages/Volunteer";
 
 const pagesRoutes = [
-    {
-      path: '',
-      element: <Home /> ,
-      alias: 'Login',
-      icon: null,
-      isAuth: false,
-      isIndex: true,
-      subRoute: null,
+  {
+    path: "",
+    element: <Home />,
+    alias: "Login",
+    icon: null,
+    isAuth: false,
+    isIndex: true,
+    subRoute: null,
   },
   {
-    path: 'about',
+    path: "about",
     element: <AboutPage />,
-    alias: 'Layout',
+    alias: "Layout",
     icon: null,
     isAuth: false,
     isIndex: false,
     subRoute: null,
   },
   {
-    path: 'contact',
+    path: "contact",
     element: <Contact />,
-     alias: 'Layout',
-   icon: null,
-   isAuth: false,
+    alias: "Layout",
+    icon: null,
+    isAuth: false,
     isIndex: false,
     subRoute: null,
-   },
-   {
-    path: 'gallery',
+  },
+  {
+    path: "gallery",
     element: <Gallery />,
-     alias: 'Layout',
-   icon: null,
-   isAuth: false,
+    alias: "Layout",
+    icon: null,
+    isAuth: false,
     isIndex: false,
     subRoute: null,
-   },
-   {
-    path: 'programs',
+  },
+  {
+    path: "programs",
     element: <Programs />,
-     alias: 'Layout',
-   icon: null,
-   isAuth: false,
+    alias: "Layout",
+    icon: null,
+    isAuth: false,
     isIndex: false,
     subRoute: null,
-   },
-   {
-    path: 'donate',
-    element: <Donate/>,
-     alias: 'Layout',
-   icon: null,
-   isAuth: false,
+  },
+  {
+    path: "donate",
+    element: <Donate />,
+    alias: "Layout",
+    icon: null,
+    isAuth: false,
     isIndex: false,
     subRoute: null,
-   },
-
-]
+  },
+  {
+    path: "volunteer",
+    element: <VolunteerPage />,
+    alias: "Layout",
+    icon: null,
+    isAuth: false,
+    isIndex: false,
+    subRoute: null,
+  },
+];
 
 export default pagesRoutes;

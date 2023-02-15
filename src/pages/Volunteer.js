@@ -1,7 +1,12 @@
 import React from 'react'
+import Volunteer from '../components/volunteer/Volunteer'
 
-export const Volunteer = () => {
+const VolunteerPage = () => {
   return (
-    <div>Volunteer</div>
+    <>
+        <Volunteer/>
+    </>
   )
 }
+
+export default VolunteerPage

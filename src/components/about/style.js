@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import bg from './../../assets/images/2.jpg'
+import bg from './../../assets/gallery-img/7.jpg'
 export const Container = styled.div`
   .about-container {
     padding: 120px;
@@ -13,7 +13,7 @@ export const Container = styled.div`
     }
   }
   .img-bg {
-    background: url(${bg});
+    background:linear-gradient(rgba(222,33,77,0.5), rgba(44,88,123,0.4)),url(${bg});
     height: 450px;
     width: 100%;
     background-size: cover;
@@ -37,4 +37,8 @@ export const Container = styled.div`
     color: black;
     text-transform: capitalize;
   }
+  .desc p{
+    line-height: 35px;
+  }
+  
 `

@@ -22,7 +22,7 @@ export const DonateBtn = styled.button`
 `;
 
 export const CausesBtn = styled.button`
-  border: 3px solid #ec8593;
+  border: 3px solid #015495;
   background: #015495;
   text-transform: capitalize;
   padding: 27px 44px;
@@ -41,4 +41,24 @@ export const CausesBtn = styled.button`
     transition: all 300ms linear 0s;
   }
   animation: topBottom 0.4s ease-in-out both 1.2s;
+`;
+
+export const SubmitBtn = styled.button`
+  
+    padding: 10px 40px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #015495;
+    font-weight: 600;
+    :hover {
+      background-color: rgba(255, 255, 255, 0.4);
+      border-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+      transition: all 0.1s ease;
+    }
+  
 `;

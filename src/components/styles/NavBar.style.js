@@ -36,11 +36,18 @@ export const NavbarLinkContainer = styled.div`
 
 export const NavbarLink = styled(Link)`
   color: #04aaf8;
-  font-size: large;
+  /* font-size: large; */
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
+  transition: all 0.2s ease-in  ;
+  :hover{
+    font-weight: 700;
+    /* color: red; */
+ 
+  }
   @media (max-width: 760px) {
     display: none;
+
   }
 `;
 
